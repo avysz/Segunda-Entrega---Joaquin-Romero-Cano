@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+<!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/assets/images/Logos/diabloLogo.png">
+
+</head>
+
+
+<body>
+
+<!--==============
+    ===HEADER===
+    ==============-->    
+
+    <header class="main-header">
+        <nav class="navbar main-navbar navbar-expand-md fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html"><img class="main-logo" src="/assets/images/Logos/diabloLogo.png" alt="mainLogo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-dice-d20 fa-xl"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Steam</a></li>
+                                <li><a class="dropdown-item" href="#">Playstation</a></li>
+                                <li><a class="dropdown-item" href="#">Xbox</a></li>
+                                <li><a class="dropdown-item" href="#">Microsoft Store</a></li>
+                                <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Comunidad</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nuestro Foro</a></li>
+                                <li><a class="dropdown-item" href="#">Reddit</a></li>
+                                <li><a class="dropdown-item" href="#">Discord</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cuenta</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pages/login/login.html">Iniciar Sesión</a></li>
+                                <li><a class="dropdown-item" href="/pages/register/register.html">Registrarse</a></li>
+                                <li><a class="dropdown-item" href="/pages/admin/admin.html">Administrador</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contact/contact.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/about-us/about-us.html">Conócenos</a>
+                        </li>
+                    </ul>
+                    <div class="header-user">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-solid fa-user-astronaut"></i></a>
+                        <div class="d-flex text-white gap-2">
+                            <div class="pt-1" id="user-header-name"></div>
+                            <div id="user-action"></div>
+                        </div>
+                    </div>
+                    
+            </div>
+        </nav>
+
+    </header>
+
+<!--==============
+    ===MAIN===
+    ==============-->    
+
+    <main class="main-container main-register">
+        
+        <h1 class="titles mb-5">¡Te damos la bienvenida!</h1>
+        
+        <div class="register-container row">
+            <div class="register-form col-12 col-md-5">
+                <h2 class="sub-titles text-align-justify">Registrarse</h2>
+                    <form>
+
+                        <div class="mt-3" title="Complete este campo con su nombre de usuario">
+                            <label for="formControlUsuario" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="formControlUsuario" minlength="3" maxlength="16" placeholder="Por ejemplo, ' Noobmaster69 '" required>
+                        </div>
+
+                        <div class="mt-3" title="Complete este campo con su correo electronico">
+                            <label for="formControlMail" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="formControlMail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Por ejemplo, nathandrake@mail.com" required>
+                        </div>
+
+                        <div class="mt-3" title="Complete este campo con su contraseña">
+                            <label for="formControlPassword" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="formControlPassword" minlength="8" maxlength="16" required>
+                        </div>
+
+                        <div class="mt-3" title="Complete este campo con su fecha de nacimiento">
+                            <label for="formControlDate" class="form-label">Fecha de nacimiento</label>
+                            <input type="date" class="form-control" id="formControlDate" required>
+                        </div>
+
+                        <div class="mt-3" title="Complete este campo con su lugar de residencia">
+                            <label for="inputProvincia" class="form-label">Seleccione provincia de residencia:</label> <br>
+                            <select class="form-control" name=provincia id="inputProvincia" required>
+                                <option value=""></option>
+                                <option value="buenos aires">Buenos Aires</option>
+                                <option value="catamarca">Catamarca</option>
+                                <option value="chaco">Chaco</option>
+                                <option value="chubut">Chubut</option>
+                                <option value="cordoba">Cordoba</option>
+                                <option value="corrientes">Corrientes</option>
+                                <option value="entre rios">Entre Rios</option>
+                                <option value="formosa">Formosa</option>
+                                <option value="jujuy">Jujuy</option>
+                                <option value="la pampa">La Pampa</option>
+                                <option value="la rioja">La Rioja</option>
+                                <option value="mendoza">Mendoza</option>
+                                <option value="misiones">Misiones</option>
+                                <option value="neuquen">Neuquen</option>
+                                <option value="rio negro">Rio Negro</option>
+                                <option value="salta">Salta</option>
+                                <option value="san juan">San Juan</option>
+                                <option value="san luis">San Luis</option>
+                                <option value="santa cruz">Santa Cruz</option>
+                                <option value="santa fe">Santa Fe</option>
+                                <option value="santiago del estero">Santiago del Estero</option>
+                                <option value="tierra del fuego">Tierra del Fuego</option>
+                                <option value="tucuman">Tucuman</option>
+                            </select>
+                        </div>
+
+                        <div class="mt-3">
+                            <label>
+                                <input type="checkbox" name="termsAndConditions" value="agree-terms" required> Acepto los Términos y condiciones, la Política de privacidad y la Política de cookies de Evil Corp. Gaming.
+                            </label>
+                        </div>
+
+                        <div class="mt-3 mb-3 mt-md-5">
+                            <button class="register-button" type="submit">Registrarme</button>
+                        </div>
+
+
+                    </form>
+
+
+            </div>
+
+            <div class="col-12 col-md-7 p-0  px-md-1">
+                <div class="banner-sales">
+                    <img src="/assets/images/Banners/doomBanner.jpeg" alt="Doom Banner">
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+    
+<!--==============
+    ===FOOTER===
+    ==============-->
+
+    <footer class="main-footer">
+        
+        <div class="container">
+            <nav class="row">
+                <div class="col-md socials">
+                    <div>¡Seguinos en nuestras redes!</div>
+
+                    <div>
+                        <a href="https://www.reddit.com/?feed=home" target="_blank"><i class="fa-brands fa-reddit"></i>Reddit</a>
+                    </div>
+
+                    <div>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                    </div>
+                </div>
+
+                <div class="col-md d-none d-md-block">
+                    <a href="/index.html"><img src="/assets/images/Logos/diabloLogo.png" alt="diabloLogo" height="100px"></a>
+                </div>
+
+                <div class="col-md d-none d-lg-block footer-info">
+                    <p>Evil Corp. Gaming</p>
+                    <p>Atencion al Cliente las 24hs.</p>
+                    <p>Copyright © Evil Corp. Gaming. Todos los derechos reservados.</p>
+                </div>
+            </nav>
+        </div>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="/js/home.js"></script>
+    <script src="/js/user-info.js"></script>
+    <!-- //<script src="/js/login.js"></script> -->
+</body>
+</html>

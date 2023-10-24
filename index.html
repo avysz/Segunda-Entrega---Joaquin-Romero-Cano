@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVIL CORP. GAMING || Compra de videojuegos, llaves virtuales y una gran comunidad.</title>
+<!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/assets/images/Logos/diabloLogo.png">
+
+
+</head>
+
+
+<body>
+    
+<!--==============
+    ===HEADER===
+    ==============-->
+    <header class="main-header">
+        <nav class="navbar main-navbar navbar-expand-md fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html"><img class="main-logo" src="/assets/images/Logos/diabloLogo.png" alt="mainLogo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-dice-d20 fa-xl"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Steam</a></li>
+                                <li><a class="dropdown-item" href="#">Playstation</a></li>
+                                <li><a class="dropdown-item" href="#">Xbox</a></li>
+                                <li><a class="dropdown-item" href="#">Microsoft Store</a></li>
+                                <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Comunidad</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nuestro Foro</a></li>
+                                <li><a class="dropdown-item" href="#">Reddit</a></li>
+                                <li><a class="dropdown-item" href="#">Discord</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cuenta</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pages/login/login.html">Iniciar Sesión</a></li>
+                                <li><a class="dropdown-item" href="/pages/register/register.html">Registrarse</a></li>
+                                <li><a class="dropdown-item" href="/pages/admin/admin.html">Administrador</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contact/contact.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/about-us/about-us.html">Conócenos</a>
+                        </li>
+                    </ul>
+                    <div class="header-user">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-solid fa-user-astronaut"></i></a>
+                        <div class="d-flex text-white gap-2">
+                            <div class="pt-1" id="user-header-name"></div>
+                            <div id="user-action"></div>
+                        </div>
+                    </div>
+                    
+            </div>
+        </nav>
+
+    </header>
+
+<!--==============
+    ===CAROUSEL===
+    ==============-->
+
+    <div class="container-xxl p-lg-0 main-banner">
+        <div class="row ">
+            <div class="col-12 col-md-6 p-0">
+                <div id="main-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="/assets/images/Games/Juego1tcm.webp" class="d-block w-100" alt="The Texas Chainsaw Massacre: The Game">
+                            <div class="carousel-caption d-none d-lg-block">
+                                <h5>The Texas Chainsaw Massacre: The Game</h5>
+                                <p>Ponte en la piel de un miembro de la conocida familia Slaughter, o en la piel de una de sus víctimas, en The Texas Chain Saw Massacre: un juego de terror asimétrico en tercera persona que se basa en la icónica película de 1974.</p>
+                            </div>
+                            <div class="carousel-caption d-lg-none">
+                                <h5>The Texas Chainsaw Massacre: The Game</h5>
+                                <p>Ponte en la piel de un miembro de la conocida familia Slaughter, o en la piel de una de sus víctimas.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="/assets/images/Games/Juego2d4.jpg" class="d-block w-100" alt="Diablo IV">
+                            <div class="carousel-caption d-none d-lg-block">
+                                <h5>Diablo IV</h5>
+                                <p>La lucha eterna entre los Altos Cielos y los Infiernos Abrasadores se desata mientras el caos amenaza con consumir Santuario. Con incesantes demonios a los que matar, ingentes facultades que dominar, mazmorras de pesadilla y un botín legendario, este extenso mundo abierto promete aventura y devastación.</p>
+                            </div>
+                            <div class="carousel-caption d-lg-none">
+                                <h5>Diablo IV</h5>
+                                <p>La lucha eterna entre los Altos Cielos y los Infiernos Abrasadores se desata mientras el caos amenaza con consumir Santuario.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="/assets/images/Games/Juego3eafc.jpg" class="d-block w-100" alt="EAFC 24">
+                            <div class="carousel-caption d-none d-lg-block">
+                                <h5>EAFC 24</h5>
+                                <p>EA SPORTS FC™ 24 te da la bienvenida a The World's Game: la experiencia futbolística más fiel hasta la fecha con HyperMotionV, Estilos de juego optimizados por Opta y el motor mejorado de Frostbite™</p>
+                            </div>
+                            <div class="carousel-caption d-lg-none">
+                                <h5>EAFC 24</h5>
+                                <p>EA SPORTS FC™ 24 te da la bienvenida a The World's Game: la experiencia futbolística más fiel hasta la fecha</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="/assets/images/Games/Juego4cs2.webp" class="d-block w-100" alt="Counter-Strike 2">
+                            <div class="carousel-caption d-none d-lg-block">
+                                <h5>Counter-Strike 2</h5>
+                                <p>Counter‑Strike 2 llegará este verano como una actualización gratis de CS:GO, así que elige tu equipamiento, afina tus habilidades ¡y prepárate para lo que está por llegar!</p>
+                            </div>
+                            <div class="carousel-caption d-lg-none">
+                                <h5>Counter-Strike 2</h5>
+                                <p>Counter‑Strike 2 llegará este verano como una actualización gratis de CS:GO</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="/assets/images/Games/ForzaHorizon5.jpg" class="d-block w-100" alt="Forza Horizon 5">
+                            <div class="carousel-caption d-none d-lg-block">
+                                <h5>Forza Horizon 5</h5>
+                                <p>Explora los vibrantes paisajes del mundo abierto de México y disfruta de una diversión sin límites al volante de los mejores coches del mundo. Conquista la escarpada Sierra Nueva en la experiencia definitiva del rally de Horizon.!</p>
+                            </div>
+                            <div class="carousel-caption d-lg-none">
+                                <h5>Forza Horizon 5</h5>
+                                <p>Forza Horizon 5 es un videojuego de carreras multijugador en línea.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 p-12">
+                <div class="main-info">
+                    <h1 class="titles">EVIL CORP. GAMING</h1>
+                    <p>Bienvenidos a nuestra página web. Aquí van a poder comprar Keys y tarjetas para todos sus juegos favoritos ya sean de PC o Consola. Tenemos contacto directo con las distribuidoras de videojuegos mas conocidas del mundo, lo cual nos permite brindarte un precio menor que cualquier otra tienda! <br> Únete a nuestro subreddit o directamente comienza a hablar con otros jugadores en nuestra pestaña de "Comunidad", donde vas a encontrar un foro con distintos topicos para cambiar ideas, informacion y hasta ayudar a otros!</p>
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </div>
+    
+
+<!--==============
+    ===MAIN===
+    ==============-->
+    
+
+    <main class="main-container">
+
+        <figure class="banner-sales">
+            <h2 class="sub-titles">COMPRA AHORA TUS GIFT CARDS</h2>
+            <p>Compra directamente desde EVIL CORP. Gift Cards para tus plataformas favoritas.</p>
+            <img src="/assets/images/Banners/giftcardSTEAM.jpg" alt="Giftcards Steam">
+            <img src="/assets/images/Banners/giftcardPS.jpg" alt="Giftcards Playstation">
+        </figure>
+
+        <div class="first-products">
+            <h2 class="sub-titles">PRODUCTOS DESTACADOS</h2>
+            <p>Encuentra los juegos mas vendidos en esta ultima semana. <br> Ponte en la piel de los personajes mas queridos y adentrate en una nueva aventura!</p>
+        </div>
+    
+        <div class="row">
+            <section class="card-container col-12 col-sm-6 col-lg-3">
+
+            <article class="card">
+                <div class="card-header">
+                    <figure>
+                        <img src="/assets/images/Games/Rust.jpg" alt="Rust - PS Edition">
+                    </figure>
+                    <div class="card-img-info">
+                        <h2>Fecha de lanzamiento: 08/02/2018</h2>     
+                    </div>
+                </div>
+
+                <div class="card-main">
+                    <h2 class="card-titles">Rust - PS Edition</h2>
+                    <div class="card-description">
+                        <p>El único objetivo en Rust es sobrevivir. Todo quiere que mueras: la vida silvestre de la isla y otros habitantes, el medio ambiente y otros sobrevivientes. Haz lo que sea necesario para durar otra noche.
+                        </p>
+                    </div>
+                
+
+                    <div class="card-prices">
+                        <div class="card-price">$2450</div>
+                        <div class="card-platforms">
+                            <img src="/assets/images/Logos/psLogo.png" alt="psLogo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="card-details">Ver detalles</button>
+                    <button class="card-buy">Comprar</button>
+                </div>
+                
+            </article>
+            </section>
+
+            <section class="card-container col-12 col-sm-6 col-lg-3 ">
+
+            <article class="card">
+                <div class="card-header">
+                    <figure>
+                        <img src="/assets/images/Games/DeadbyDaylight.jpg" alt="Dead by Daylight">
+                    </figure>
+                    <div class="card-img-info">
+                        <h2>Fecha de lanzamiento: 14/06/2016</h2>     
+                    </div>
+                </div>
+
+                <div class="card-main">
+                    <h2 class="card-titles">Dead by Daylight- Steam Edition</h2>
+                    <div class="card-description">
+                        <p>Dead by Daylight es un juego de horror de multijugador (4 contra 1) en el que un jugador representa el rol del asesino despiadado y los 4 restantes juegan como supervivientes que intentan escapar de él para evitar ser capturados y asesinados.
+                        </p>
+                    </div>
+                
+
+                    <div class="card-prices">
+                        <div class="card-price">$1650</div>
+                        <div class="card-platforms">
+                            <img src="/assets/images/Logos/steamLogo.webp" alt="steamLogo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="card-details">Ver detalles</button>
+                    <button class="card-buy">Comprar</button>
+                </div>
+                
+            </article>
+            </section>
+
+            <section class="card-container col-12 col-sm-6 col-lg-3">
+
+            <article class="card">
+                <div class="card-header">
+                    <figure>
+                        <img src="/assets/images/Games/ResidentEvil.png" alt="Resident Evil - Xbox Edition">
+                    </figure>
+                    <div class="card-img-info">
+                        <h2>Fecha de lanzamiento: 23/03/2023</h2>     
+                    </div>
+                </div>
+
+                <div class="card-main">
+                    <h2 class="card-titles">Resident Evil - Xbox Edition</h2>
+                    <div class="card-description">
+                        <p>Resident Evil 4 es un remake del Resident Evil 4 original del 2005. Survival Horror de última generación reimaginado para el año 2023.
+                        </p>
+                    </div>
+                
+
+                    <div class="card-prices">
+                        <div class="card-price">$12960</div>
+                        <div class="card-platforms">
+                            <img src="/assets/images/Logos/xboxLogo.png" alt="xboxLogo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="card-details">Ver detalles</button>
+                    <button class="card-buy">Comprar</button>
+                </div>
+                
+            </article>
+            </section>
+
+            <section class="card-container col-12 col-sm-6 col-lg-3">
+            
+            <article class="card">
+                <div class="card-header">
+                    <figure>
+                        <img src="/assets/images/Games/Minecraft.jpg" alt="Minecraft - Microsoft Edition">
+                    </figure>
+                    <div class="card-img-info">
+                        <h2>Fecha de lanzamiento: 18/11/2011</h2>     
+                    </div>
+                </div>
+
+                <div class="card-main">
+                    <h2 class="card-titles">Minecraft - Microsoft Edition</h2>
+                    <div class="card-description">
+                        <p>Minecraft es un juego de bloques que podrás transformar en cualquier cosa que te imagines. Juega en el modo creativo con recursos ilimitados o busca herramientas para defenderte de los peligros que acechan en el modo supervivencia.
+                        </p>
+                    </div>
+                
+
+                    <div class="card-prices">
+                        <div class="card-price">$8600</div>
+                        <div class="card-platforms">
+                            <img src="/assets/images/Logos/microsoftLogo.png" alt="microsoftLogo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="card-details">Ver detalles</button>
+                    <button class="card-buy">Comprar</button>
+                </div>
+                
+            </article>
+            </section>
+
+            <section class="card-container col-12 col-sm-6 col-lg-3">
+            
+                <article class="card">
+                    <div class="card-header">
+                        <figure>
+                            <img src="/assets/images/Games/R6.jpg" alt="Rainbow Six Siege - Xbox Edition">
+                        </figure>
+                        <div class="card-img-info">
+                            <h2>Fecha de lanzamiento: 01/12/2015</h2>     
+                        </div>
+                    </div>
+    
+                    <div class="card-main">
+                        <h2 class="card-titles">Rainbow Six Siege - Xbox Edition</h2>
+                        <div class="card-description">
+                            <p>Tom Clancy's Rainbow Six® Siege es un shooter táctico realista por equipos en el que una cuidadosa planificación y ejecución de tu estrategia son claves para conseguir la victoria.
+                            </p>
+                        </div>
+                    
+    
+                        <div class="card-prices">
+                            <div class="card-price">$1999</div>
+                            <div class="card-platforms">
+                                <img src="/assets/images/Logos/xboxLogo.png" alt="xboxLogo">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card-footer">
+                        <button class="card-details">Ver detalles</button>
+                        <button class="card-buy">Comprar</button>
+                    </div>
+                    
+                </article>
+            </section>
+
+            <section class="card-container col-12 col-sm-6 col-lg-3">
+            
+                <article class="card">
+                    <div class="card-header">
+                        <figure>
+                            <img src="/assets/images/Games/streetfighter.jpg" alt="Street Fighter 6 - PS Edition">
+                        </figure>
+                        <div class="card-img-info">
+                            <h2>Fecha de lanzamiento: 02/06/2023</h2>     
+                        </div>
+                    </div>
+        
+                    <div class="card-main">
+                        <h2 class="card-titles">Street Fighter 6 - PS Edition</h2>
+                        <div class="card-description">
+                            <p>Street Fighter 6 hace gala de la potencia del RE ENGINE de Capcom, e incluye tres modos de juego: World Tour, Fighting Ground y Battle Hub.
+                            Un variado elenco de 18 luchadores
+                            </p>
+                        </div>
+                        
+        
+                        <div class="card-prices">
+                            <div class="card-price">$9900</div>
+                            <div class="card-platforms">
+                                <img src="/assets/images/Logos/psLogo.png" alt="psLogo">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="card-footer">
+                        <button class="card-details">Ver detalles</button>
+                        <button class="card-buy">Comprar</button>
+                    </div>
+                        
+                </article>
+            </section>
+
+            <section class="card-container col-12 col-sm-6 col-lg-3">
+            
+                <article class="card">
+                    <div class="card-header">
+                        <figure>
+                            <img src="/assets/images/Games/terraria.jpg" alt="Terraria - Microsoft Edition">
+                        </figure>
+                        <div class="card-img-info">
+                            <h2>Fecha de lanzamiento: 16/05/2011</h2>     
+                        </div>
+                    </div>
+        
+                    <div class="card-main">
+                        <h2 class="card-titles">Terraria - Microsoft Edition</h2>
+                        <div class="card-description">
+                            <p>¡Cava, lucha, explora, construye! Con este juego de aventuras repleto de acción nada es imposible.
+                            </p>
+                        </div>
+                        
+        
+                        <div class="card-prices">
+                            <div class="card-price">$130</div>
+                            <div class="card-platforms">
+                                <img src="/assets/images/Logos/microsoftLogo.png" alt="microsoftLogo">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="card-footer">
+                        <button class="card-details">Ver detalles</button>
+                        <button class="card-buy">Comprar</button>
+                    </div>
+                        
+                </article>
+            </section>
+
+            <section class="card-container col-12 col-sm-6 col-lg-3">
+            
+                <article class="card">
+                    <div class="card-header">
+                        <figure>
+                            <img src="/assets/images/Games/cyberpunk2077.jpg" alt="Cyberpunk 2077 - Steam Edition">
+                        </figure>
+                        <div class="card-img-info">
+                            <h2>Fecha de lanzamiento: 09/12/2020</h2>     
+                        </div>
+                    </div>
+        
+                    <div class="card-main">
+                        <h2 class="card-titles">Cyberpunk 2077 - Steam Edition</h2>
+                        <div class="card-description">
+                            <p>Cyberpunk 2077 es un RPG de aventura y acción de mundo abierto ambientado en el futuro sombrío de Night City, una peligrosa megalópolis obsesionada con el poder, el glamur y las incesantes modificaciones corporales
+                            </p>
+                        </div>
+                        
+        
+                        <div class="card-prices">
+                            <div class="card-price">$8600</div>
+                            <div class="card-platforms">
+                                <img src="/assets/images/Logos/steamLogo.webp" alt="steamLogo">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="card-footer">
+                        <button class="card-details">Ver detalles</button>
+                        <button class="card-buy">Comprar</button>
+                    </div>
+                        
+                </article>
+            </section>
+        </div>
+
+        <figure class="banner-sales">
+                <a href=""><img src="/assets/images/Banners/gamesconBanner.jpg" alt="Gamescon"></a>
+                <figcaption class="text-caption">Del 23/08 al 27/08 se celebró la Gamescon 2023, una de las ferias electronicas mas grandes del mundo. Enterate de todas las novedades haciendo click en la imagen!</figcaption>
+        </figure>
+
+        <div class="sales-products">
+            <h2 class="sub-titles">OFERTAS IMPERDIBLES</h2>
+            <p>En esta sección encontra las mejores ofertas del mercado!</p>
+        </div>
+        
+        <div class="row">
+            <section class="card-container col-12 col-sm-6 col-lg-3">
+
+                <article class="card">
+                    <div class="card-header">
+                        <figure>
+                            <img src="/assets/images/Games/RocketLeague.jpg" alt="Rocket League - PS Edition">
+                        </figure>
+                        <div class="card-img-info">
+                            <h2>Fecha de lanzamiento: 07/07/2015</h2>     
+                        </div>
+                    </div>
+    
+                    <div class="card-main">
+                        <h2 class="card-titles">Rocket League - PS Edition</h2>
+                        <div class="card-description">
+                            <p>Rocket League combina el fútbol de estilo arcade con el caos a cuatro ruedas, unos controles fáciles y una competición fluida y basada en la física.
+                            </p>
+                        </div>
+                    
+    
+                        <div class="card-prices">
+                            <div class="discounts">$8000</div>
+                            <div class="card-price">$6550</div>
+                            <div class="card-platforms">
+                                <img src="/assets/images/Logos/psLogo.png" alt="psLogo">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card-footer">
+                        <button class="card-details">Ver detalles</button>
+                        <button class="card-buy">Comprar</button>
+                    </div>
+                    
+                </article>
+            </section>
+    
+            <section class="card-container col-12 col-sm-6 col-lg-3">
+    
+                <article class="card">
+                    <div class="card-header">
+                        <figure>
+                            <img src="/assets/images/Games/HuntShowdown.webp" alt="Hunt Showdown - Xbox Edition">
+                        </figure>
+                        <div class="card-img-info">
+                            <h2>Fecha de lanzamiento: 27/08/2019</h2>     
+                        </div>
+                    </div>
+    
+                    <div class="card-main">
+                        <h2 class="card-titles">Hunt Showdowm - Xbox Edition</h2>
+                        <div class="card-description">
+                            <p>Hunt: Showdown es un emocionante shooter de alto riesgo en primera persona para JcJcE. Elimina monstruos de pesadilla, mientras compites por las recompensas que te llevarán a alcanzar la gloria.
+                            </p>
+                        </div>
+                    
+    
+                        <div class="card-prices">
+                            <div class="discounts">$1100</div>
+                            <div class="card-price">$769</div>
+                            <div class="card-platforms">
+                                <img src="/assets/images/Logos/xboxLogo.png" alt="xboxLogo">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card-footer">
+                        <button class="card-details">Ver detalles</button>
+                        <button class="card-buy">Comprar</button>
+                    </div>
+                    
+                </article>
+            </section>
+    
+            <section class="card-container col-12 col-sm-6 col-lg-3">
+    
+                <article class="card">
+                    <div class="card-header">
+                        <figure>
+                            <img src="/assets/images/Games/ProjectZomboid.jpg" alt="Project Zomboid- Steam Edition">
+                        </figure>
+                        <div class="card-img-info">
+                            <h2>Fecha de lanzamiento: 08/11/2013</h2>     
+                        </div>
+                    </div>
+    
+                    <div class="card-main">
+                        <h2 class="card-titles">Project Zomboid - Steam Edition</h2>
+                        <div class="card-description">
+                            <p>Project Zomboid es lo último en supervivencia zombie. Solo o en MP: saqueas, construyes, creas, luchas, cultivas y pescas en una lucha por sobrevivir.
+                            </p>
+                        </div>
+                    
+    
+                        <div class="card-prices">
+                            <div class="discounts">$1400</div>
+                            <div class="card-price">$1100</div>
+                            <div class="card-platforms">
+                                <img src="/assets/images/Logos/steamLogo.webp" alt="steamLogo">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card-footer">
+                        <button class="card-details">Ver detalles</button>
+                        <button class="card-buy">Comprar</button>
+                    </div>
+                    
+                </article>
+            </section>
+    
+            <section class="card-container col-12 col-sm-6 col-lg-3">
+    
+                <article class="card">
+                    <div class="card-header">
+                        <figure>
+                            <img src="/assets/images/Games/redDeadRedemption2.jpg" alt="Red Dead Redemption 2 - Microsoft Edition">
+                        </figure>
+                        <div class="card-img-info">
+                            <h2>Fecha de lanzamiento: 05/12/2019</h2>     
+                        </div>
+                    </div>
+    
+                    <div class="card-main">
+                        <h2 class="card-titles">Red Dead Redemption 2 - Microsoft Edition</h2>
+                        <div class="card-description">
+                            <p>América, 1899. El ocaso del Salvaje Oeste ha comenzado. Los que no se rinden o sucumben, son asesinados.
+                            </p>
+                        </div>
+                    
+    
+                        <div class="card-prices">
+                            <div class="discounts">$11300</div>
+                            <div class="card-price">$8400</div>
+                            <div class="card-platforms">
+                                <img src="/assets/images/Logos/microsoftLogo.png" alt="microsoftLogo">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card-footer">
+                        <button class="card-details">Ver detalles</button>
+                        <button class="card-buy">Comprar</button>
+                    </div>
+                    
+                </article>
+            </section>
+        </div>
+
+        <figure class="banner-sales">
+            <a href="#"><img src="/assets/images/Banners/venexBanner.gif" alt="venex"></a>
+            <figcaption class="text-caption">Compra toda la tecnologia que querés. Los mejores productos gamers, las mejores marcas y al mejor precio, todo en VENEX!</figcaption>
+        </figure>
+
+    </main>
+
+<!--==============
+    ===FOOTER===
+    ==============-->
+
+    <footer class="main-footer">
+        
+        <div class="container">
+            <nav class="row">
+                <div class="col-md socials">
+                    <div>¡Seguinos en nuestras redes!</div>
+
+                    <div>
+                        <a href="https://www.reddit.com/?feed=home" target="_blank"><i class="fa-brands fa-reddit"></i>Reddit</a>
+                    </div>
+
+                    <div>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                    </div>
+                </div>
+
+                <div class="col-md d-none d-md-block">
+                    <a href="/index.html"><img src="/assets/images/Logos/diabloLogo.png" alt="diabloLogo" height="100px"></a>
+                </div>
+
+                <div class="col-md d-none d-lg-block footer-info">
+                    <p>Evil Corp. Gaming</p>
+                    <p>Atencion al Cliente las 24hs.</p>
+                    <p>Copyright © Evil Corp. Gaming. Todos los derechos reservados.</p>
+                </div>
+            </nav>
+        </div>
+        
+    </footer>
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="/js/home.js"></script>
+    <script src="/js/user-info.js"></script>
+
+</body>
+</html>

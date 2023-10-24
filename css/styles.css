@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    opacity: 1;
+    background-image:  radial-gradient(#920000 1.1500000000000001px, transparent 1.1500000000000001px), radial-gradient(#920000 1.1500000000000001px, #000000 1.1500000000000001px);
+    background-size: 46px 46px;
+    background-position: 0 0,23px 23px;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+.login-button{
+    color: white;
+}
+
+.login-button:hover{
+    background-color: rgba(145, 0, 0, 0.904);
+    transition: .80s;
+    border-radius: 5px;
+    border-color: #920000;
+}
+
+.main-navbar{
+    padding: 0;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.main-navbar .nav-link{
+    color: white;
+}
+
+.main-navbar .nav-link.active{
+    color: rgb(255, 0, 0);
+}
+
+.main-navbar .nav-item:hover{
+    background-color: rgba(145, 0, 0, 0.904);
+    transition: .80s;
+    border-radius: 5px;
+}
+
+.main-navbar .nav-item:hover .nav-link.active{
+    background-color: rgba(145, 0, 0, 0.904);
+    color: white;
+    transition: .80s;
+    border-radius: 5px;
+}
+
+.nav-item{
+    margin: 12px;
+}
+
+.main-navbar .navbar-brand .main-logo{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.header-user{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.header-user i {
+    font-size: 1.5rem;
+}
+
+.main-banner{
+    margin-top: 110px;
+}
+
+.titles{
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    text-shadow: 1px 1px 9px rgba(145, 0, 0, 1);
+}
+
+.sub-titles{
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 38px;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(255, 153, 0, 1);
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 0;
+}
+
+.main-container{
+    flex-grow: 1;
+    padding: 20px 12px;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.main-container .first-products p{
+    text-align: center;
+}
+
+.main-container .banner-sales img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-container .banner-sales p{
+    text-align: center;
+}
+
+.main-container .sales-products p{
+    text-align: center;
+}
+
+.text-caption{
+    text-align: center;
+    font-size: 20px;
+    background: #FF9933;
+    background: radial-gradient(circle farthest-side at left center, #FF9933 1%, #FF1A16 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.card {
+    width: 300px;
+    border-radius: 12px;
+    height: 450px;
+    overflow-x: hidden;
+    margin: 20px auto;
+    box-shadow: 1px 1px 8px 0 #aaaaaa;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow .3s;
+    background-color: white;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 10px 4px #767676;
+}
+
+
+.card-header {
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.card-header img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(.75);
+    transition: all .3s ease-in;
+}
+
+.card:hover .card-header img {
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+
+.card-img-info {
+    position: absolute;
+    bottom: 16px;
+    left: -60%;
+    width: 60%;
+    padding: 8px;
+    background-color: rgba(0,0,0,.25);
+    background-image: linear-gradient(to right, rgba(0,0,0,.65), rgba(0,0,0,.35));
+    color: white;
+    transition: .25s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.card:hover .card-header .card-img-info {
+    left: 0;
+}
+
+.card-img-info h2 {
+    font-size: 14px;
+}
+
+.card-img-info p {
+    font-size: 10px;
+}
+
+.card-main {
+    padding: 4px 8px 16px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.card-main h2 {
+    border-bottom: 4px solid rgb(255, 153, 0);
+    padding-bottom: 1px;
+}
+
+.card:hover .card-main h2{
+    border-bottom: 4px solid rgb(145, 0, 0);
+    padding-bottom: 1px;
+    transition: .75s;
+}
+
+.card-main .card-description {
+    flex: 1;
+}
+
+.card-main p {
+    margin: 8px 0;
+    line-height: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.card-titles{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.card-prices{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-platforms img{
+    object-fit: cover;
+    position: relative;
+    width: 40px
+}
+
+.card-price {
+    font-size:25px;
+    font-weight: bold;
+    padding-right: 12px;
+}
+
+.discounts{
+    font-style: italic;
+    font-size:25px;
+    text-decoration: line-through;
+    color: grey;
+
+}
+
+.card-footer {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-footer button {
+    background-color: rgb(255, 153, 0);
+    color: white;
+    padding: 6px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.card:hover .card-footer button{
+    background-color: rgb(145, 0, 0);
+    border-color: rgb(145, 0, 0);
+    color: white;
+}
+
+.card-footer button:hover {
+    transform: scale(1.15);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.main-footer{
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-footer .socials{
+    text-align: justify;
+    text-decoration: none;
+}
+
+.main-footer .socials a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-info{
+    text-align: end;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 1px;
+}
+
+.main-navbar .dropdown .dropdown-item:hover{
+    background-color: rgba(145, 0, 0, 0.904);
+    transition: .80s;
+    border-radius: 5px;
+}
+
+.main-register, .main-contact{
+    margin: 110px 50px;
+}
+
+.main-register .titles{
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    text-shadow: 1px 1px 9px rgba(145, 0, 0, 1);
+    text-align: center;
+}
+
+.main-register .sub-titles{
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 38px;
+    text-align: justify;
+    text-shadow: 1px 1px 5px rgba(255, 153, 0, 1);
+}
+
+.register-form, .contact-form, .contact-map, .info-page, .info-img{
+    background-color: #30303060;
+}
+
+.form-control:focus{
+    background-color: rgb(66, 66, 66);
+    border-color: black;
+    transition: .75s;
+    color: white;
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+.register-button{
+    background-color: rgba(255, 153, 0, 1);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+}
+
+.register-button:hover{
+    background-color: rgba(145, 0, 0, 1);
+    border-radius: 10px;
+    transform: scale(1.15);
+    transition: .75s;
+}
+
+.main-contact .titles{
+    text-align: center;
+}
+
+.main-contact .sub-titles{
+    text-align: justify;
+}
+
+.map-container{
+    display: flex;
+}
+
+.contact-map{
+    min-height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-info .titles{
+    text-align: center;
+}
+
+.main-info .sub-titles{
+    text-align: justify;
+}
+
+.info-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-img p{
+    text-align: center;
+}
+
+.pic{
+    width: 30%;
+    border-radius: 100%;
+}
+
+.pic2{
+    width: 95%;
+}
+
+.table-image img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.table-title {
+    font-weight: bold;
+}
+
+.table-description {
+    font-size: .875rem;
+    font-family: monospace
+}
+.table-price {
+    font-weight: bold;
+}
+
+.modal-content{
+    border-radius: 2px;
+    border-color: white;
+}
+
+.modal-header, .modal-body, .modal-footer{
+    background-color: black;
+    color: white;
+}
+
+.add-button{
+    background-color: rgba(255, 153, 0, 1);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+}
+
+.add-button:hover{
+    background-color: rgba(145, 0, 0, 1);
+    border-radius: 10px;
+    transform: scale(1.15);
+    transition: .75s;
+}
+
+
+
+
+
+
+
+
+
+
